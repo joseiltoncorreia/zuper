@@ -1,0 +1,14 @@
+# Log files
+*.log
+*.html
+*.xml
+*.pabotsuitnames
+
+# log folder
+log/
+
+# Folders
+node_modules/
+videos/
+screenshots/
+reports/

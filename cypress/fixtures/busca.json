@@ -1,0 +1,32 @@
+[
+  {
+    "origem": "Curitiba",
+    "ciglaOrigem": "CWB",
+    "destino": "Salvador",
+    "ciglaDestino": "SSA",
+    "dataIda": "2024-10-01",
+    "dataVolta": "2024-10-30",
+    "qtdAdultos": "1",
+    "qtdCriancas": "1",
+    "qtdBebes": "1",
+    "resultadoOrigem": "Curitiba, Brasil - CWB",
+    "resultadoDestino": "Salvador, Brasil - SSA",
+    "resultadoData": "ter. 01 de out.  - qua. 30 de out.",
+    "resultadoPassageiros": "2 adultos, 2 crianças"
+  },
+  {
+    "origem": "São Paulo",
+    "ciglaOrigem": "CGH",
+    "destino": "Rio de Janeiro",
+    "ciglaDestino": "RIO",
+    "dataIda": "2024-09-09",
+    "dataVolta": "2024-09-15",
+    "qtdAdultos": "3",
+    "qtdCriancas": "0",
+    "qtdBebes": "0",
+    "resultadoOrigem": "Sao Paulo, Brasil - CGH",
+    "resultadoDestino": "Rio de Janeiro, Brasil - RIO",
+    "resultadoData": "seg. 09 de set.  - dom. 15 de set.",
+    "resultadoPassageiros": "4 adultos"
+  }
+]
