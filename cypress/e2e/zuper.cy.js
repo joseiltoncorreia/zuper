@@ -38,6 +38,8 @@ describe('Testando a home page da Zuper', () => {
                     cy.numeroDeCriancas(busca.qtdCriancas)
                     cy.numeroDeBebes(busca.qtdBebes)
 
+                    cy.screenshot('informações da viagem')
+
                     // Realiza a busca
                     cy.get('button[data-zt="flightSearchSubmit"]').click()
 
@@ -53,7 +55,9 @@ describe('Testando a home page da Zuper', () => {
                         .its('length')                                                                          // Obtém o número de elementos encontrados
                         .then((length) => {
                             cy.get('div.flight-qty > h6').should('contain.text', `${length} voos encontrados`)  // Valida a quantidade de voos encontrados
-                        })
+                    })
+
+                    cy.screenshot('Página com resultado das buscas')
                 })
             })
         })

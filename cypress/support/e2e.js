@@ -14,16 +14,14 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
+import 'cypress-mochawesome-reporter/register'
 import './commands'
-import addContext from 'mochawesome/addContext'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
-Cypress.on('test:after:run', (test, runnable) => {
-    if (test.state === 'failed') {
-      const screenshot = `assets/<span class="math-inline">\{Cypress\.spec\.name\}/</span>{runnable.parent.title}   
-   -- ${test.title} (failed).png`;
-      addContext({ test }, screenshot);   
-  
+Cypress.on('uncaught:exception', (err, runnable) => {
+    // Ignora apenas erros com a mensagem "Cannot read properties of null (reading 'getAttribute')"
+    if (err.message.includes("Cannot read properties of null (reading 'getAttribute')")) {
+      return false
     }
   })
