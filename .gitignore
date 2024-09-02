@@ -3,6 +3,7 @@
 *.html
 *.xml
 *.pabotsuitnames
+mochawesome.json
 
 # log folder
 log/
@@ -12,3 +13,4 @@ node_modules/
 videos/
 screenshots/
 reports/
+mochawesome-report/
