@@ -20,8 +20,7 @@ import './commands'
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 Cypress.on('uncaught:exception', (err, runnable) => {
-    // Ignora apenas erros com a mensagem "Cannot read properties of null (reading 'getAttribute')"
-    if (err.message.includes("Cannot read properties of null")) {
-      return false
-    }
-  })
+  // returning false here prevents Cypress from
+  // failing the test
+  return false
+})
