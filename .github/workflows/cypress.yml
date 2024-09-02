@@ -37,14 +37,14 @@ jobs:
           path: mochawesome-report/mochawesome.html
 
       - name: Store screenshots (on failure)
-        if: failure() 
+        if: always() 
         uses: actions/upload-artifact@v3
         with:
           name: cypress-screenshots
           path: cypress/screenshots
 
       - name: Store videos (on failure)
-        if: failure()
+        if: always()
         uses: actions/upload-artifact@v3
         with:
           name: cypress-videos
